@@ -2,3 +2,19 @@ label{
     display:inline-block;
     text-align:left;
 }
+ul.a{
+    display: inline-block;
+    widows: 80px;
+    height: 180px;
+    list-style-type:disc;
+    margin-left: 5px;
+    position: relative;
+    border-radius: 7px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    clear:both;
+
+}
+.header{
+    : darkgray;
+}
