@@ -4,12 +4,14 @@ class DisplayResults extends Component {
     render() {
         return (
             <div>
-                <h1>{this.props.result.city + ", " + this.props.result.state}</h1>
-                
-                <h2>{this.props.result.lat + " " + this.props.result.long} <br/>
-                    {this.props.result.population} <br/>
-                    {this.props.result.wages}
-                    </h2>
+                <label>
+                <p>{this.props.result.city + ", " + this.props.result.state}</p>
+                </label> <br/>  
+                <label><p2 id="info">State: {this.props.result.state}<br/>
+                    Location: ({this.props.result.lat + " " + this.props.result.long}) <br/>
+                    Population (estimated): {this.props.result.population} <br/>
+                    Total Pages: {this.props.result.wages}
+                     </p2></label>
             </div>
         );
     }
