@@ -1,0 +1,24 @@
+label{
+    display:inline-block;
+    text-align:left;
+}
+ul.a{
+    display: inline-block;
+    width: 500px;
+    height: 180px;
+    list-style-type:disc;
+    margin-left: 5px;
+    position: relative;
+    border-radius: 7px;
+    background-color: #f2f2f2; 
+}
+input[type=number]:focus{
+    border-color:#333;
+}
+button{
+    border-radius: 12px;  
+}
+button:hover{
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}

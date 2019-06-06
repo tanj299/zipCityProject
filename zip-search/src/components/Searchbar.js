@@ -33,7 +33,6 @@ class Searchbar extends Component {
 			});
 			console.log(response.data);
 		})
-
 		.catch(err => console.log(err));
 	}
 
@@ -68,9 +67,10 @@ class Searchbar extends Component {
 		let results = this.relevantData();
 		return (
 			<div> 
-				<div className="zipcode"> Zipcode: {this.state.zipcode} </div>
+				<br/>
+				<b><div className="zipcode"> Zipcode:  </div></b>
+				<input className="zipcodeEntry" type="text" name="zipcode" value={this.state.zipcode} onChange={this.handleChange} placeholder=" Try 10016"></input>
 				<button className="search" onClick={this.search}> Search </button>
-				<input className="zipcodeEntry" type="text" name="zipcode" value={this.state.zipcode} onChange={this.handleChange}/>
 				{/* display results */}
 				{results}
 			</div>
