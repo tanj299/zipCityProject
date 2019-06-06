@@ -69,7 +69,7 @@ class Searchbar extends Component {
 			<div> 
 				<br/>
 				<b><div className="zipcode"> Zipcode:  </div></b>
-				<input className="zipcodeEntry" type="text" name="zipcode" value={this.state.zipcode} onChange={this.handleChange} placeholder=" Try 10016"/>
+				<input className="zipcodeEntry" type="text" name="zipcode" value={this.state.zipcode} onChange={this.handleChange} placeholder=" Try 10016"></input>
 				<button className="search" onClick={this.search}> Search </button>
 				{/* display results */}
 				{results}

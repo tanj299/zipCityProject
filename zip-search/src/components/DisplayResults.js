@@ -6,10 +6,8 @@ class DisplayResults extends Component {
             <div>
                 <ul class="a">
                  <label class="header">
-                <p>{this.props.result.city + ", " + this.props.result.state}</p>
-                </label> <br/>  
-                <label>
-                    <li>State: {this.props.result.state}</li>
+                <p>{this.props.result.city + ", " + this.props.result.state}</p> 
+                   <li>State: {this.props.result.state}</li>
                    <li> Location: ({this.props.result.lat + " " + this.props.result.long}) </li>
                     <li>Population (estimated): {this.props.result.population}</li>
                    <li> Total Wages: {this.props.result.wages}</li>
